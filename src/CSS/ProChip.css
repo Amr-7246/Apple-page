@@ -1,0 +1,29 @@
+/* Define the custom property for the angle */
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.chipImg-div {
+    position: relative;
+    --angle: 0deg; /* Initial value */
+}
+
+.chipImg-div::before {
+    content: '';
+    display: block;
+    width: 102%;
+    height: 102%;
+    background-image: conic-gradient(from var(--angle), #001b69, 69%, #ff000094, #001b69);
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    z-index: 1;
+    transition: --angle 0.5s ease;
+    filter: blur(9px);
+}
+
+
+
+
