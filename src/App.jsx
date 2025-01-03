@@ -18,7 +18,7 @@ function App() {
         <Navbar />
         <Hero /> 
         {/* // <HighLights /> */}
-        {/* <Model /> */}
+        <Model />
         <DetaliedIPhone />
         <ProChip />
         <Footer />
